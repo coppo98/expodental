@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ExpoDental</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header con Carosello (solo desktop) -->
+    <header>
+        <div class="position-relative d-flex header-desktop" style="user-select: none !important;">
+            <div class="shadow py-2 position-absolute w-100 bg-white icone-header" style="opacity: 0.7; z-index: 2;">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <img src="https://www.expodental.it/wp-content/uploads/2024/06/cropped-logo-ita.png"
+                        alt="ExpoDental" class="img-fluid icona-expodental">
+
+                    <img src="/librerie/qe/img/expodental/vector.png" alt="Quaderno Elettronico - Zucchetti"
+                        class="img-fluid icona-qe">
+                </div>
+            </div>
+
+            <div class="container-fluid px-0 dark-overlay">
+                <img src="/librerie/qe/img/expodental/rimini_fiera.jpg" alt="Rimini Fiera" class="img-fluid blur">
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide w-100 position-absolute d-flex"
+                data-ride="carousel">
+                <ol class="carousel-indicators d-none">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner mx-auto w-75">
+                    <div class="carousel-item active h-100 text-white">
+                        <div class="h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="h1-principale">Vieni a trovarci!</h1>
+                                <h2 class="h2-date">Rimini Fiera - Dal 15 al 17 maggio</h2>
+                            </div>
+
+                            <div class="pb-3">
+                                <h2 class="">Ti aspettiamo presso il Padiglione <span style="color: #0874fc;">A3</span>
+                                    allo
+                                    Stand <span style="color: #e834a4;">154</span></h2>
+                                <h2>Incontra il nostro Staff e scopri come migliorare
+                                    il tuo studio!</h2>
+                                <span style="color: transparent;">test</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="h-100 d-flex flex-column justify-content-between text-white">
+                            <h1 class="text-primary h1-secondario">Possiedi uno studio dentistico?</h1>
+                            <div class="pb-3 d-flex align-items-center">
+                                <div>
+                                    <h2>Scopri <span class="text-primary">WINDENT</span>, il miglior gestionale per lo
+                                        studio
+                                        odontoiatrico</h2>
+                                    <h2>Chiedi informazioni in merito al nostro Staff!</h2>
+                                </div>
+                                <img src="/librerie/qe/svg/quaderno/windent.svg" alt="Windent" class="w-25">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="h-100 d-flex flex-column justify-content-between text-white">
+                            <h1 style="color: #e834a4" class="h1-secondario">Possiedi una clinica polispecialistica?
+                            </h1>
+                            <div class="pb-3 d-flex align-items-center">
+                                <div>
+                                    <h2>Scopri <span style="color: #e834a4">POLIWIN</span>, il miglior gestionale
+                                        per la clinica polispecialistica</h2>
+                                    <h2>Chiedi informazioni in merito al nostro Staff!</h2>
+                                </div>
+                                <img src="/librerie/qe/svg/quaderno/poliwin.svg" alt="Poliwin" class="w-25">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="h-100 d-flex flex-column justify-content-between text-white">
+                            <h1 class="text-warning h1-secondario"> Possiedi un laboratorio odontotecnico?</h1>
+                            <div class="pb-3 d-flex align-items-center">
+                                <div>
+                                    <h2>Scopri <span class="text-warning">WINODLAB</span>, il miglior gestionale per il
+                                        laboratorio
+                                        odontotecnico</h2>
+                                    <h2>Chiedi informazioni in merito al nostro Staff!</h2>
+                                </div>
+                                <img src="/librerie/qe/svg/quaderno/winodlab.svg" alt="Winodlab" class="w-25">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="d-flex header-mobile" style="user-select: none !important;">
+            <div class="shadow py-2 w-100 bg-white icone-header" style="opacity: 0.7; z-index: 2;">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <img src="https://www.expodental.it/wp-content/uploads/2024/06/cropped-logo-ita.png"
+                        alt="ExpoDental" class="img-fluid icona-expodental">
+
+                    <img src="/librerie/qe/img/expodental/vector.png" alt="Quaderno Elettronico - Zucchetti"
+                        class="img-fluid icona-qe">
+                </div>
+            </div>
+
+            <div class="container-fluid position-relative px-0 dark-overlay">
+                <img src="/librerie/qe/img/expodental/rimini_fiera.jpg" alt="Rimini Fiera" class="img-fluid blur">
+                <div class="h-100 d-flex flex-column justify-content-between position-absolute text-white"
+                    style="bottom: 0px; z-index: 2">
+                    <div class="text-center">
+                        <h2 class="">Vieni a trovarci!</h2>
+                        <h5 class="">Rimini Fiera - Dal 15 al 17 maggio</h2>
+                    </div>
+
+                    <div class="pb-3">
+                        <h5 class="text-center">Ti aspettiamo presso il <span style="color: #0874fc;"
+                                class="h4">Padiglione
+                                A3</span>
+                            allo
+                            <span style="color: #e834a4;" class="h4">Stand 154</span><span class="h3">!</span>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Info su Expodental e QE -->
+    <section class="container pt-3">
+        <div class="h-100 d-flex flex-column justify-content-between position-absolute_">
+            <div style="padding: 1.5rem;">
+                <h3>📅 Cos'è ExpoDental?</h3>
+                <p class="h5 mb-4" style="font-weight: normal;">Giunta alla sua <span
+                        style="font-weight: bold;">18ª</span>
+                    edizione, <span style="font-weight: bold;">Expodental Meeting</span> è la principale fiera italiana
+                    dedicata al settore dentale.
+                </p>
+                <h3>📍Dove si svolge?</h3>
+                <p class="h5 mb-4" style="font-weight: normal;">
+                    Dal 2016 si svolge stabilmente a Rimini, città dalla forte vocazione congressuale e posizione
+                    strategica nel cuore dell’Italia. <br> <br>
+                    &ensp;&ensp;&ensp;&ensp;Ogni anno accoglie oltre 20.000 visitatori e 350 aziende, offrendo un
+                    panorama completo su innovazione, formazione e networking per i professionisti del settore.
+                </p>
+            </div>
+
+            <div class="sezione-luogo mb-4">
+                <h3>🖥️ Cos'è Quaderno Elettronico?</h3>
+                <p class="h5 mb-4" style="font-weight: normal;">
+                    In questo contesto, <span style="font-weight: bold;">Quaderno Elettronico</span> si distingue come
+                    leader nel settore odontoiatrico da oltre <span style="font-weight: bold;">35 anni</span>. <br> <br>
+                    Il suo software gestionale, utilizzato quotidianamente da <span style="font-weight: bold;">migliaia
+                        di studi dentistici</span>, è un punto di
+                    riferimento per efficienza e innovazione nella gestione delle pratiche odontoiatriche,
+                    polispecialistiche, odontotecniche e non solo.
+                </p>
+                <h3>📸 Come trovarci?</h3>
+                <p class="h5 mb-4" style="font-weight: normal;">
+                    Puoi incontrare lo staff di <span style="font-weight: bold;">Quaderno Elettronico</span> presso il
+                    <span style="font-weight: bold;">Padiglione A3</span>, lo Stand è il numero <span
+                        style="font-weight: bold;">154</span> della 4ª corsia.
+                </p>
+            </div>
+
+            <div class="orari-desktop" style="padding: 1.5rem;">
+                <h3>⏰ Orari di apertura</h3>
+                <p class="h5" style="font-weight: normal;">Expodental Meeting aprirà nel seguenti orari:</p>
+                <ul class="h5 p-0 d-flex justify-content-between" style="font-weight: normal; list-style-type: none;">
+                    <li class="">🕘 <span style="font-weight: bold;">Giovedì 15</span>: 9.30 – 18.00</li>
+                    <li class="">🕤 <span style="font-weight: bold;">Venerdì 16</span>: 9.30 – 19.00</li>
+                    <li class="">🕓 <span style="font-weight: bold;">Sabato 17</span>: 9.30 – 16.30</li>
+                </ul>
+            </div>
+
+            <div class="orari-mobile" style="padding: 1.5rem;">
+                <h3>⏰ Orari di apertura</h3>
+                <p class="h5" style="font-weight: normal;">Expodental Meeting aprirà nel seguenti orari:</p>
+                <ul class="h5 p-0 text-center" style="font-weight: normal; list-style-type: none;">
+                    <li class="text-nowrap">🕘 <span style="font-weight: bold;">Giovedì 15</span>: 9.30 – 18.00</li>
+                    <li class="text-nowrap">🕤 <span style="font-weight: bold;">Venerdì 16</span>: 9.30 – 19.00</li>
+                    <li class="text-nowrap">🕓 <span style="font-weight: bold;">Sabato 17</span>: 9.30 – 16.30</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab sui prodotti QE principali -->
+    <section class="container">
+        <div style="padding: 1.5rem;">
+            <h3>🚀 Il gestionale <strong>Quaderno Elettronico</strong></h3>
+            <h5 style="font-weight: normal;">Scegli la soluzione migliore per te e preparati a scoprire il programma che ha cambiato il modo di lavorare negli studi dentistici:</h5>
+        </div>
+
+        <div class="mt-2">
+            <div class="tab row">
+                <button class="tablinks col-4 d-flex align-items-center justify-content-center windent active" onclick="openCity(event, 'London')">
+                    <span>Studio Dentistico</span>
+                    <img src="/librerie/qe/svg/quaderno/windent.svg" alt="Windent" style="width: 20%">
+                </button>
+                <button class="tablinks col-4 d-flex align-items-center justify-content-center poliwin" onclick="openCity(event, 'Paris')">
+                    <span>Clinica Polispecialistica</span>
+                    <img src="/librerie/qe/svg/quaderno/poliwin.svg" alt="Poliwin" style="width: 20%">
+                </button>
+                <button class="tablinks col-4 d-flex align-items-center justify-content-center winodlab" onclick="openCity(event, 'Tokyo')">
+                    <span>Laboratorio Odontotecnico</span>
+                    <img src="/librerie/qe/svg/quaderno/winodlab.svg" alt="Winodlab" style="width: 20%">
+                </button>
+            </div>
+
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Ja pan.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Form di registrazione -->
+    <div class="container pt-3">
+        <div class="row">
+
+            <div id="contatto" class="col-12">
+                <div class="text-center">
+                    <div class="rounded-neura bg-light">
+                        <form class="js-validate p-4 shadow" id="mainform" name="mainform" method="POST"
+                            action="invio.asp" onsubmit="return inviorichiestacontatti();">
+                            <div class="text-left mb-4 text-secondary">
+                                <div class="h3 animate__animated animate__fadeIn">
+                                    <h3>📝 Registra ora i tuoi dati</h3>
+                                    <h5>💼 Un incaricato del reparto commerciale ti ricontatterà per fornirti una
+                                        <u>consulenza gratuita</u> sul prodotto più adatto al tuo studio!
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="row mx-gutters-2">
+                                <div class="col-md-12 mb-2">
+                                    <label class="sr-only">Nome o Ragione sociale</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <input class="form-control" id="nome"
+                                                placeholder="Cognome Nome / Ragione Sociale"
+                                                aria-label="Cognome Nome / Ragione Sociale" required
+                                                data-msg="Questo campo è obbligatorio." data-error-class="u-has-error"
+                                                type="text" name="nome" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mb-2">
+                                    <label class="sr-only">Indirizzo</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <input class="form-control" id="indirizzo" placeholder="Indirizzo"
+                                                aria-label="Indirizzo" required data-msg="Specifica l'indirizzo."
+                                                data-error-class="u-has-error" type="text" name="indirizzo" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label class="sr-only">CAP</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <input maxlength="5" class="form-control" id="cap" placeholder="CAP"
+                                                aria-label="CAP" required data-msg="Devi inserire il CAP."
+                                                data-error-class="u-has-error" type="text" name="cap" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mb-2">
+                                    <label class="sr-only">Città</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <input class="form-control" id="citta" placeholder="Città"
+                                                aria-label="Città" required data-msg="Indica la città."
+                                                data-error-class="u-has-error" type="text" name="citta" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label class="sr-only">Provincia</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <input maxlength="2" class="form-control" id="provincia"
+                                                placeholder="Provincia" aria-label="Provincia" required
+                                                data-msg="Ti sei dimenticato della provincia."
+                                                data-error-class="u-has-error" type="text" name="provincia" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label class="sr-only">Email</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <input class="form-control" id="email" name="email" placeholder="Email"
+                                                aria-label="Email" required data-msg="Inserisci una mail valida."
+                                                data-error-class="u-has-error" type="email" value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6 mb-2">
+                                    <label class="sr-only">Cellulare</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <input class="form-control" id="cellulare" placeholder="Cellulare"
+                                                aria-label="Cellulare" required
+                                                data-msg="Specifica un numero di cellulare."
+                                                data-error-class="u-has-error" type="text" name="cellulare" value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-2">
+                                    <label class="sr-only">Telefono</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <input class="form-control" id="telefono" placeholder="Telefono"
+                                                aria-label="Telefono" required
+                                                data-msg="Specifica un numero di telefono."
+                                                data-error-class="u-has-error" type="text" name="telefono" value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-2">
+                                    <label class="sr-only">Motivo</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <select id="motivo" class="form-control custom-select" required
+                                                data-msg="Seleziona un motivo." data-error-class="u-has-error"
+                                                name="motivo">
+                                                <option value="" selected disabled>Specifica un motivo</option>
+                                                <option value="Acquisto Prodotto">Acquisto Prodotto</option>
+                                                <option value="Informazioni Commerciali">Informazioni Commerciali
+                                                </option>
+                                                <option value="Informazioni Tecniche">Informazioni Tecniche</option>
+                                                <option value="Suggerimenti o Proposte">Corsi</option>
+                                                <option value="Suggerimenti o Proposte">Suggerimenti o Proposte
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label class="sr-only">Riferimento</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <select id="riferimento" class="form-control custom-select" required
+                                                data-msg="Specifica un prodotto." data-error-class="u-has-error"
+                                                name="riferimento">
+                                                <option value="" selected disabled>Seleziona un Prodotto</option>
+                                                <option value="WINDENT">WINDENT - Gestionale Dentisti</option>
+                                                <option value="POLIWIN">POLIWIN - Gestionale Polispecialistici
+                                                </option>
+                                                <option value="WINODLAB">WINODLAB - Gestionale Odontotecnici
+                                                </option>
+                                                <option value="DETFATT">DETFATT - Gestionale Azienda Generica
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label class="sr-only">Desidero essere ricontattato</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <select id="divfascia" class="form-control custom-select" required
+                                                data-msg="Indicateci come volete essere ricontattato."
+                                                data-error-class="u-has-error" name="divfascia">
+                                                <option value="" selected disabled>Desidero essere ricontattato</option>
+                                                <option value="Mattina 08:30 - 13:00">Mattina 08:30 - 13:00</option>
+                                                <option value="Pomeriggio 14:30 - 18:00">Pomeriggio 14:30 - 18:00
+                                                </option>
+                                                <option value="Qualsiasi orario">Qualsiasi orario</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-2">
+                                    <label class="sr-only">Oggetto</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <input class="form-control" id="oggetto" placeholder="Oggetto"
+                                                aria-label="Oggetto" type="text" name="oggetto" value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- AGGIUNTO - Select rivenditore -->
+                                <div class="col-md-6 mb-2">
+                                    <label class="sr-only">Rivenditore</label>
+                                    <div class="js-form-message">
+                                        <div class="input-group">
+                                            <select id="rivenditore" class="form-control custom-select" required
+                                                data-msg="Indicateci come volete essere ricontattato."
+                                                data-error-class="u-has-error" name="divfascia">
+                                                <option value="" selected disabled>Rivenditore</option>
+                                                <option value="Rossi S.R.L.">Rossi S.R.L.</option>
+                                                <option value="Gino Celin">Gino Celin</option>
+                                                <option value="Gagliasso">Gagliasso</option>
+                                                <option value="Odoustech">Odoustech</option>
+                                                <option value="Gruppo Inf.">Gruppo Inf.</option>
+                                                <option value="Umbra">Umbra</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="w-100"></div>
+                            </div>
+                            <div class="mb-5">
+                                <label class="sr-only">Come possiamo aiutarti?</label>
+                                <div class="js-form-message input-group">
+                                    <textarea class="form-control" rows="4" id="note" name="note" required
+                                        placeholder="Salve, vorrei sapere..." data-msg="Scrivi qui la tua richiesta."
+                                        data-error-class="u-has-error"></textarea>
+                                    <textarea style="width:300px; display:none;" name="le_note" id="le_note"
+                                        rows="6"></textarea>
+                                </div>
+                            </div>
+                            <div class="js-form-message mb-2">
+                                <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
+                                    <input type="checkbox" class="custom-control-input" id="privacy" name="privacy"
+                                        required data-msg="Devi accettare il consenso per la privacy."
+                                        data-error-class="u-has-error">
+                                    <label class="custom-control-label" for="privacy">
+                                        <small>
+                                            Autorizzo il trattamento dei miei dati personali
+                                            <a class="link-muted" href="/Privacy">Privacy</a>
+                                        </small>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="text-right">
+                                <button type="submit" id="tasto_invio" name="tasto_invio"
+                                    class="btn btn-outline-primary w-25 w-md-20 transition-3d-hover">
+                                    Invia
+                                </button>
+                            </div>
+
+                            <div id="ok"
+                                class="alert-success bg-success center content-center align-self-center font-weight-bold rounded mt-2 shadow-soft col-6"
+                                style="color: white;"></div>
+                            <div id="no"
+                                class="alert-danger bg-danger center content-center align-self-center font-weight-bold rounded mt-2 shadow-soft col-6"
+                                style="color: white;"></div>
+                            <input type="hidden" name="contatti_frm" id="contatti_frm" value="contatti_frm" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info sugli Add-on -->
+    <section class="container mt-4">
+        <h3>✨ Bene, ma cos'altro può offrirmi questo gestionale?</h3>
+        <h5 style="font-weight: normal;">🔍 I prodotti targati <span style="font-weight: bold;">Quaderno
+                Elettronico</span>&reg; consentono di:
+        </h5>
+        <div id="SVGFE" class="container mb-6 animate__animated animate__fadeIn card-servizio mt-4">
+            <div class="container card-frame rounded-neura p-5">
+                <div class="row justify-content-lg-between align-items-center">
+                    <div class="col-12 col-md-7">
+                        <h1 class="title-2-bold-neura dark-neura mb-4 animate__animated animate__fadeIn">
+                            <strong>Fattura <span class="text-primary">Elettronica</span></strong>
+                        </h1>
+                        <p class="lead">
+                            Attraverso la pressione del tasto Invia/Ricevi invierai le fatture elettroniche e riceverai
+                            quelle dei tuoi fornitori direttamente in Quaderno.
+                        </p>
+                        <div class="p-2">
+                            <a class="btn btn-outline-primary" href="/Servizi/fatturazione-elettronica/">Scopri</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-none d-md-block">
+                        <img class="js-svg-injector" src="/librerie/qe/svg/flat-icons/fatturazione-elettronica.svg"
+                            alt="Fatturazione Elettronica Servizi Quaderno Elettronico" data-parent="#SVGFE">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="SVGComunicazioneTS" class="container mb-6 animate__animated animate__fadeIn card-servizio">
+            <div class="container card-frame rounded-neura p-5">
+                <div class="row justify-content-lg-between align-items-center">
+                    <div class="col-12 col-md-7">
+                        <h1 class="title-2-bold-neura dark-neura mb-4 animate__animated animate__fadeIn">
+                            <strong>Comunicazione <span class="text-primary">TS</span></strong>
+                        </h1>
+                        <p class="lead">
+                            Invia con un click gli importi delle spese sanitarie sostenute dai tuoi pazienti
+                            direttamente
+                            all'Agenzia delle Entrate da Quaderno.
+                        </p>
+                        <div class="p-2">
+                            <a class="btn btn-outline-primary" href="/Servizi/servizio-ts/">Scopri</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-none d-md-block">
+                        <img class="js-svg-injector" src="/librerie/qe/svg/flat-icons/sistema-ts.svg"
+                            alt="730 Invio TS Comunicazione Fatture Servizi Quaderno Elettronico"
+                            data-parent="#SVGComunicazioneTS">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="SVGQCloud" class="container mb-6 animate__animated animate__fadeIn card-servizio">
+            <div class="container card-frame rounded-neura p-5">
+                <div class="row justify-content-lg-between align-items-center">
+                    <div class="col-12 col-md-7">
+                        <h1 class="title-2-bold-neura dark-neura mb-4 animate__animated animate__fadeIn">
+                            <strong>Interfacciamento <span class="text-primary">Previmedical</span></strong>
+                        </h1>
+                        <p class="lead">
+                            Il connettore permette di agevolare l'interfacciamento con Previmedical SPA e accedere in
+                            modo facilitato a tutti i servizi necessari per gestire le pratiche di risarcimento
+                            assicurative.
+                        </p>
+                        <div class="p-2">
+                            <a class="btn btn-outline-primary" href="/Servizi/interfacciamento-previmedical/">Scopri</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-none d-md-block">
+                        <img class="js-svg-injector" src="/librerie/qe/svg/flat-icons/Previmedical1.svg"
+                            alt="Invio messaggi Whatsapp e SMS Servizi Quaderno Elettronico" data-parent="#SVGQCloud">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="SVGQCloud" class="container mb-6 animate__animated animate__fadeIn card-servizio">
+            <div class="container card-frame rounded-neura p-5">
+                <div class="row justify-content-lg-between align-items-center">
+                    <div class="col-12 col-md-7">
+                        <h1 class="title-2-bold-neura dark-neura mb-4 animate__animated animate__fadeIn">
+                            <strong>Interfacciamento <span class="text-primary">Doctolib</span></strong>
+                        </h1>
+                        <p class="lead">
+                            Sincronizza l'agenda di Quaderno Elettronico con il portale di visibilità Doctolib e
+                            gestisci tutto in un unico gestionale in modo facile e veloce.
+                        </p>
+                        <div class="p-2">
+                            <a class="btn btn-outline-primary" href="/Servizi/doctolib/">Scopri</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-none d-md-block">
+                        <img class="js-svg-injector" src="/librerie/qe/svg/flat-icons/logo-blue.png"
+                            alt="Invio messaggi Whatsapp e SMS Servizi Quaderno Elettronico" data-parent="#SVGQCloud">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="SVGSms" class="container mb-6 animate__animated animate__fadeIn card-servizio">
+            <div class="container card-frame rounded-neura p-5">
+                <div class="row justify-content-lg-between align-items-center">
+                    <div class="col-12 col-md-7">
+                        <h1 class="title-2-bold-neura dark-neura mb-4 animate__animated animate__fadeIn">
+                            <strong>Servizio <span class="text-primary">SMS</span></strong>
+                        </h1>
+                        <p class="lead">
+                            Ricordate gli appuntamenti, le scadenze oppure inviate messaggi istantanei
+                            direttamente dal vostro gestionale Quaderno.
+                        </p>
+                        <div class="p-2">
+                            <a class="btn btn-outline-primary" href="/Servizi/invio-sms/">Scopri</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-none d-md-block">
+                        <img class="js-svg-injector" src="/librerie/qe/svg/flat-icons/sms.svg"
+                            alt="Invio messaggi Whatsapp e SMS Servizi Quaderno Elettronico" data-parent="#SVGSms">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="SVGSms" class="container mb-6 animate__animated animate__fadeIn card-servizio">
+            <div class="container card-frame rounded-neura p-5">
+                <div class="row justify-content-lg-between align-items-center">
+                    <div class="col-12 col-md-7">
+                        <h1 class="title-2-bold-neura dark-neura mb-4 animate__animated animate__fadeIn">
+                            <strong>Servizio <span class="text-primary">Whatsapp</span></strong>
+                        </h1>
+                        <p class="lead">
+                            Ricordate gli appuntamenti, inviate messaggi istantanei o condividete i documenti al
+                            paziente tramite Whatsapp.
+                        </p>
+                        <div class="p-2">
+                            <a class="btn btn-outline-primary" href="/Servizi/whatsapp/">Scopri</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-none d-md-block">
+                        <img class="js-svg-injector" src="/librerie/qe/svg/flat-icons/whatsapp.png"
+                            alt="Invio messaggi Whatsapp e SMS Servizi Quaderno Elettronico" data-parent="#SVGSms">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="SVGQCloud" class="container mb-6 animate__animated animate__fadeIn card-servizio">
+            <div class="container card-frame rounded-neura p-5">
+                <div class="row justify-content-lg-between align-items-center">
+                    <div class="col-12 col-md-7">
+                        <h1 class="title-2-bold-neura dark-neura mb-4 animate__animated animate__fadeIn">
+                            <strong>Quaderno <span class="text-primary">Online</span></strong>
+                        </h1>
+                        <p class="lead">
+                            La soluzione Online di Quaderno Elettronico per accedere ai tuoi dati ovunque vi troviate.
+                        </p>
+                        <div class="p-2">
+                            <a class="btn btn-outline-primary" href="/Servizi/quaderno-online/">Scopri</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-none d-md-block">
+                        <img class="js-svg-injector" src="/librerie/qe/svg/flat-icons/quaderno-cloud-online.svg"
+                            alt="Invio messaggi Whatsapp e SMS Servizi Quaderno Elettronico" data-parent="#SVGQCloud">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="SVGStampa" class="container mb-6 animate__animated animate__fadeIn card-servizio">
+            <div class="container card-frame rounded-neura p-5">
+                <div class="row justify-content-lg-between align-items-center">
+                    <div class="col-12 col-md-7">
+                        <h1 class="title-2-bold-neura dark-neura mb-4 animate__animated animate__fadeIn">
+                            <strong>Stampa <span class="text-primary">Appuntamenti</span></strong>
+                        </h1>
+                        <p class="lead">
+                            Stampa ai pazienti un prememoria adesivo con i prossimi appuntamenti prenotati.
+                        </p>
+                        <div class="p-2">
+                            <a class="btn btn-outline-primary" href="/Servizi/stampa-appuntamenti/">Scopri</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-none d-md-block">
+                        <img class="js-svg-injector" src="/librerie/qe/svg/flat-icons/stampa-appuntamenti.svg"
+                            alt="Invio messaggi Whatsapp e SMS Servizi Quaderno Elettronico" data-parent="#SVGStampa">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="radious-1-8 container space-1 bg-light mb-4 card-servizio">
+            <div class="row align-items-lg-center">
+                <div class="col-lg-12 mb-7 mb-lg-0 text-center">
+                    <div class="pr-lg-4">
+                        <h1 class="title-3-bold-neura dark-neura p-2" style="font-weight: bold;">Aumenta le funzionalità
+                        </h1>
+                        <h2 class="title-2-neura dark-sub-neura pt-3" style="font-weight: normal;">
+                            Un mondo di estensioni pensate per il tuo studio
+                        </h2>
+                        <img class="w-100" src="/librerie/qe/img/add-on/scopri-addon-quaderno.png"
+                            alt="Quaderno Elettronico Addon Aumenta le Funzionalità di Quaderno">
+
+                        <div class="container p-2 animate__animated animate__fadeIn">
+                            <div class="align-items-center text-center">
+                                <a class="m-2 btn btn-lg btn-outline-primary" href="/add_on/">Scopri i nostri Add-on
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <footer class="text-white text-center py-3" style="background-color: #272727;">
+        &copy; 2025 - Tutti i diritti riservati
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
