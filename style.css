@@ -7,6 +7,11 @@
     position: relative;
 }
 
+.matching-word{
+    font-weight: bold;
+    color: rgb(6, 149, 120);
+}
+
 .card-servizio {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
     border-radius: 10px;
@@ -56,8 +61,23 @@
     border: 2px dashed grey;
 }
 
-.tabcontent {
+.tabcontent{
     display: none;
+}
+
+.tabcontent.windent{
+    border: 2px dashed #007bff;
+    border-top: 0px;
+}
+
+.tabcontent.poliwin{
+    border: 2px dashed #e834a4;
+    border-top: 0px;
+}
+
+.tabcontent.winodlab{
+    border: 2px dashed #ffc107;
+    border-top: 0px;
 }
 
 #London {
