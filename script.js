@@ -1,23 +1,28 @@
 // SEZIONI TABS
 function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
+    var i;
+    var tabcontent = document.getElementsByClassName("tabcontent");
+    var tablinks = document.getElementsByClassName("tablinks");
+
+    // Nasconde tutti i contenuti dei tab e rimuove la classe active
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
-        // Rimuovi la classe "active" da tutti gli elementi tabcontent
         tabcontent[i].classList.remove("active");
     }
-    tablinks = document.getElementsByClassName("tablinks");
+
+    // Rimuove la classe active da tutti i tab
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].classList.remove("active");
     }
-    // Mostra la sezione selezionata
-    document.getElementById(cityName).style.display = "block";
-    // Aggiungi la classe "active" anche al tabcontent attivo
-    document.getElementById(cityName).classList.add("active");
-    // Aggiungi la classe "active" al tab link
-    evt.currentTarget.className += " active";
+
+    // Mostra il contenuto del tab cliccato e aggiunge la classe active
+    var selectedContent = document.getElementById(cityName);
+    selectedContent.style.display = "block";
+    selectedContent.classList.add("active");
+
+    evt.currentTarget.classList.add("active");
 }
+
 
 
 // DROPDOWN RADIOGRAFICO

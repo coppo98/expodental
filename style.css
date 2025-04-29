@@ -3,11 +3,16 @@
     border-radius: 0.6rem;
 }
 
+strong {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+}
+
 .dark-overlay {
     position: relative;
 }
 
-.matching-word{
+.matching-word {
     font-weight: bold;
     color: rgb(6, 149, 120);
 }
@@ -61,23 +66,32 @@
     border: 2px dashed grey;
 }
 
-.tabcontent{
+.tabcontent {
     display: none;
 }
 
-.tabcontent.windent{
+.tabcontent.active {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.tabcontent.windent {
     border: 2px dashed #007bff;
     border-top: 0px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
-.tabcontent.poliwin{
+.tabcontent.poliwin {
     border: 2px dashed #e834a4;
     border-top: 0px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
-.tabcontent.winodlab{
+.tabcontent.winodlab {
     border: 2px dashed #ffc107;
     border-top: 0px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
 #London {
@@ -86,23 +100,28 @@
 
 .tablinks {
     border: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.tablinks.active {
     background-color: white;
-    border-bottom: 2px solid white;
+    z-index: 3;
 }
 
 .tablinks.active.windent {
     border-bottom: 2px solid #007bff;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .tablinks.active.poliwin {
     border-bottom: 2px solid #e834a4;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .tablinks.active.winodlab {
     border-bottom: 2px solid #ffc107;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 button:focus {
@@ -263,5 +282,75 @@ button:focus {
 
     .icona-qe {
         width: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .tabcontent {
+        height: 493px !important;
+    }
+
+    .tabcontent.windent .row {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .tabcontent {
+        height: 589px !important;
+    }
+
+    .tabcontent.windent .row {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .tabcontent {
+        height: 759px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .tabcontent {
+        min-height: 761px !important;
+    }
+}
+
+@media (min-width: 500px) {
+    .icon-mobile {
+        display: block;
+        width: 20% !important;
+    }
+
+    .icon-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 499px) {
+    .icon-mobile {
+        display: none;
+    }
+
+    .icon-desktop {
+        display: block;
+        width: 35% !important;
+    }
+
+    .flex-custom {
+        flex-direction: column;
+    }
+
+    .card-frame {
+        padding: .5rem !important;
+    }
+
+    .card-frame strong{
+        font-size: 30px !important;
     }
 }
